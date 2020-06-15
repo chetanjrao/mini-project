@@ -45,4 +45,8 @@ class Github:
 
 if __name__ == "__main__":
     g = Github(username=input("Enter GitHub username: "))
-    print(g.public_repos)
+    questionaire = input("Do you want the public repository urls to be shown ? (Y(Yes)/ n(No))")
+    if questionaire == "Y":
+        print(g.public_repos)
+    else:
+        print("Thank you for using the GitHub client")
